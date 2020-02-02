@@ -3,8 +3,8 @@ import java.util.*;
 
 public class NewYearGift {
 	String receiver;
-	static int no_chocolates,no_sweets;//no_sweets indicate total number of sweets and no_chocolates indicate total number of chocolates in the gift
-    static int totwt;//indicated total weight of gift;
+	static int no_chocolates,no_sweets;//no_sweets indicates total number of sweets and no_chocolates indicates total number of chocolates in the gift
+    static int totwt;//indicates total weight of gift;
 	static Sweets[] sw;
 	static NewYearGift[] gift;
 	static Chocolates[] ch;
@@ -28,7 +28,7 @@ public class NewYearGift {
 		int n=sc.nextInt();
 		int price,weight,quan,n1,n2;
 		String flavour,receiver;
-		sortChocolates sorted;
+		sortChocolates sorted;//create an object of sortChocolates class
 		gift=new NewYearGift[n];
 		for(int i=0;i<n;i++) {
 			System.out.println("Enter the name of the receiver");
@@ -54,9 +54,6 @@ public class NewYearGift {
 				gift[i].totwt+=weight*quan;
 			}
 			System.out.println("Total weight of gift of "+gift[i].receiver+" is: "+totwt);
-			//int c=0;
-			//for(int k=0;k<ch.length;k++)
-				//if(ch[k].price>=10 && ch[k].price<=50) c+=ch[k].number;
 			System.out.println("Number of chocolates in gift with price between 10 and 50 are "+findCount(ch,10,50));
 			Arrays.sort(ch,new sortChocolates());
 			System.out.println("After sorting chocolates in a gift according to their prices");
