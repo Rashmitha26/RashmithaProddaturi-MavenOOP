@@ -7,7 +7,7 @@ public class Chocolates extends Sweets{
 		this .flavour=f;
 	}
 	public  String toString() {
-		return "Price: "+this.price+" Weight: "+this.wt+" Quantity: "+this.number;
+		return "Price: "+this.price+" Weight: "+this.wt+" Quantity: "+this.number+" Flavour: "+this.flavour;
 	}
 
 }

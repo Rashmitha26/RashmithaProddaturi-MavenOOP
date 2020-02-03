@@ -38,7 +38,7 @@ public class NewYearGift {
 			n1=sc.nextInt();n2=sc.nextInt();
 			gift[i]=new NewYearGift(n1,n2,receiver);
 			if(gift[i].no_sweets!=0) {
-			 System.out.println("Enter price,weight and quantity of sweets");
+			 System.out.println("Enter price,weight and number of sweets of this type");
 			 for(int j=0;j<gift[i].no_sweets;j++) {
 				price=sc.nextInt();
 				weight=sc.nextInt();
@@ -48,7 +48,7 @@ public class NewYearGift {
 			 }
 		    }
 			if(gift[i].no_chocolates!=0) {
-			 System.out.println("Enter price,weight,quantity and flavour of chocolates");
+			 System.out.println("Enter price,weight,number and flavour of chocolates of this type");
 			 for(int j=0;j<gift[i].no_chocolates;j++) {
 				price=sc.nextInt();
 				weight=sc.nextInt();
@@ -62,7 +62,7 @@ public class NewYearGift {
 			if(gift[i].no_chocolates!=0) {
 			 System.out.println("Enter the range of prices to find number of chocolates in the range");
 			 int min=sc.nextInt();int max=sc.nextInt();
-			 System.out.println("Number of chocolates in gift with price between 10 and 50 are "+findCount(ch,min,max));
+			 System.out.println("Number of chocolates in gift with price between "+min+" and "+max+" are "+findCount(ch,min,max));
 			 System.out.println("Select the basis for sorting chocolates\n 1.Price 2.Weight 3.Quantity");
 			 int op=sc.nextInt();
 			 Arrays.sort(ch,new sortChocolates(op));
