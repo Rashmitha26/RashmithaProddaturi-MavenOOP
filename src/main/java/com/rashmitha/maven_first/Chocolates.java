@@ -6,5 +6,8 @@ public class Chocolates extends Sweets{
 		super(price,wt,n);
 		this .flavour=f;
 	}
+	public  String toString() {
+		return "Price: "+this.price+" Weight: "+this.wt+" Quantity: "+this.number;
+	}
 
 }

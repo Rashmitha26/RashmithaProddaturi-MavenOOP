@@ -7,4 +7,7 @@ public class Sweets {
 		this.wt=c;
 		this.number=n;
 	}
+	public String toString() {
+		return "Price: "+this.price+" Weight: "+this.wt+" Quantity: "+this.number;
+	}
 }
